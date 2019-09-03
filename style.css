@@ -1,0 +1,251 @@
+body {
+	background-color: #0B0C10;
+	margin: 0;
+	text-align: center;
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+#nav-bar {
+	display: flex;
+	background-color: #66FCF1; 
+	align-items: center;
+	justify-content: space-around;
+	color: #0B0C10;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 10px;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+}
+
+#logo-link {
+	text-decoration: none;
+	color: #0B0C10;
+}
+
+#cigimax-logo {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+#nav-title {
+	margin: 0;
+	font-size: 30px;
+}
+
+#nav-list {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.nav-item {
+	padding: 0 10px;
+}
+
+.nav-item:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+#welcome {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*background-image: radial-gradient(#1F2833, #0B0C10);*/
+	background-image: url(./Assets/BG1.jpg);
+	background-size: cover;
+}
+
+#welcome-title {
+	font-size: 80px;
+	color: #66FCF1;
+/*	color: #EC1B1B;*/
+	margin: 0;
+	text-shadow: 2px 2px 5px black;
+}
+
+#welcome-desc {
+	margin: 0;
+	color: #C5C6C7;
+	font-size: 25px;
+	font-style: italic;
+	text-shadow: 1px 1px 5px black;
+}
+
+#grid-container {
+	background-color: #C5C6C7;
+	margin: 100px 50px 0px 50px;
+	padding: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 20px;
+	border-radius: 5px;
+}
+
+.product {
+	border: 1px solid black;
+}
+
+.product-img {
+	height: 250px;
+}
+
+.p-img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.product-txt {
+	color: #FFFFFF;
+	background-color: #1F2833;
+	text-align: center;
+}
+
+.product-desc {
+	height: auto;
+	padding: 10px;
+	margin: 0 0;
+}
+
+/*MODAL AND SLIDESHOW*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+	object-fit: cover;
+	width: 100%;
+}
+
+.w3-button {
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.w3-display-left {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%,-50%);
+	-ms-transform: translate(-0%,-50%)
+}
+
+.w3-display-right {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%,-50%);
+	-ms-transform: translate(0%,-50%);
+}
+
+#contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-color: #0B0C10;
+	border-bottom: 5px solid #66FCF1;
+	padding: 150px 0px;
+}
+
+#contact-title {
+	margin: 0;
+	color: white;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.contact-links {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1000px;
+	flex-wrap: wrap;
+}
+
+.contact-details {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+footer {
+	padding: 50px;
+	background-color: #1F2833;
+	color: #FFFFFF;
+	text-align: right;
+}
+
+@media (max-width: 900px) {
+
+	#grid-container {
+		grid-template-columns: repeat(1, auto);
+		padding: 40px 20px;
+		margin: 0px;
+		border-radius: 0px;
+	}
+
+	#welcome-title {
+	font-size: 40px;
+	color: #66FCF1;
+	margin: 0;
+	}
+
+	#nav-bar {
+	flex-direction: column;
+	}
+
+}

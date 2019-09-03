@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Survey form
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 id="title">Survey form</h1>
+	<div id="main">
+		<p id="description">A little survey from us. </p>
+  		<form id="survey-form">
+    		<div class="leftrow">
+    			<div class="labels">
+    				<label id="name-label">* Name: </label>
+    			</div>
+    			<div class="right-column">
+    				<input class="input-field" type="text" id="name" placeholder="Enter your name" required>
+    			</div>
+    		</div>
+   			<div class="leftrow">
+    			<div class="labels">
+    				<label id="email-label">* Email: </label>
+    			</div>
+    			<div class="right-column">
+    				<input class="input-field" type="email" id="email" placeholder="Enter your email" required>
+    			</div>
+    		</div>
+    		<div class="leftrow">
+    			<div class="labels">
+    				<label id="number-label">* Age: </label>
+    			</div>
+    			<div class="right-column">
+    				<input class="input-field" type="number" id="number" placeholder="Enter your age" min="1" max="99">
+    			</div>
+    		</div>
+
+<!-- DROPDOWN MENU -->
+
+    		<div class="leftrow">
+    			<div class="labels">
+    				<label id="mstatus-laber" id="dropdown">Marital status: </label>
+    			</div>
+ 				<div class="right-column">
+    				<select id="dropdown">
+    					<option value="single">Single</option>
+					    <option value="married">Married</option>
+					    <option value="divorced">Divorced</option>
+					    <option value="widow">Widow</option>
+    				</select>
+    			</div>
+    		</div>
+
+<!-- GENDER SELECTION -->    
+
+			<div class="leftrow">			
+			    <div class="labels">
+			      <label class="gender-selection">Select you gender:</label>
+			    </div>
+			    <div class="right-column">
+			      <ul>
+			        <input type="radio" name="gender" value="male"> Male<br>
+			        <input type="radio" name="gender" value="female"> Female<br>
+			        <input type="radio" name="gender" value="other"> Other<br>
+			      </ul>
+			    </div>
+			</div>
+
+<!-- PETS SELECTION --> 
+
+			<div class="leftrow">	    
+			    <div class="labels">
+			      <label class="pets-selection">Pets you have:<br>
+			      	(Check all that apply)
+			      </label>
+			    </div>
+			    <div class="right-column">
+			      <ul>
+			        <input type="checkbox" value="1">Dog<br>
+			        <input type="checkbox" value="2">Cat<br>
+			        <input type="checkbox" value="3">Other<br>
+			      </ul>
+			    </div>
+			</div>
+
+<!-- COMMENTS --> 
+			<div class="leftrow">
+			    <div class="labels">
+			      <label class="gender-selection">Any comments?
+			      </label>
+			    </div>
+			    <div class="right-column">
+			        <textarea id="comments" placeholder="Leave your comments here..."></textarea><br>
+			    </div>
+			</div>
+
+<!-- BUTTON --> 
+			<input type="submit" id="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
