@@ -238,7 +238,7 @@ footer {
 	align-items: center;
 	margin-bottom: 150px;
 	height: 100vh;
-	background-image: radial-gradient(#1F2833, #0B0C10);
+	background-image: none;
 	}
 
 	#project-cont {
