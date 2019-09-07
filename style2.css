@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Red Hat Text', sans-serif;
+	background-image: url(Assets/BG1.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-color: #464646;
+  	color: white;
+}
+
+#main {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	text-align: right;
+}
+
+div {
+	padding: 50px;
+}
+
+#div1, #div2 {
+	border-right: 2px solid rgba(87, 86, 86, 0.2);
+	border-bottom: 2px solid rgba(87, 86, 86, 0.2);
+}
+
+#div1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: left;
+}
+
+h3 {
+	margin: 0;
+}
+
+#title {
+	margin: 0;
+}
+
+#div2:hover {
+	background-color: blue;
+}
