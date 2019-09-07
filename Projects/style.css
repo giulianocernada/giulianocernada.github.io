@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Red Hat Text', sans-serif;
+	background-image: url(Assets/BG1.jpg);
+}
+
+header {
+	height: 140px;
+	padding: 0 30px 0 30px;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#lista {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.lista-item {
+	padding: 10px;
+}
+
+#project-wrap {
+	padding: 0 30px;
+}
+
+.project-type {
+	margin: 0;
+	text-align: left;
+}
+
+.project-name {
+	margin: 0;
+}
+
+.project-location {
+	margin: 0;
+}
+
+#residential-projects {
+	display: flex;
+  	flex-wrap: nowrap;
+  	overflow-x: auto;
+}
+
+.project {
+	flex: 0 0 auto;
+}
