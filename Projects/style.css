@@ -7,7 +7,7 @@ body {
 
 header {
 	height: 180px;
-	padding: 0 30px 0 30px;
+	padding: 0 30px;
 }
 
 #header {
@@ -27,52 +27,46 @@ header {
 	padding: 10px;
 }
 
-#proyectos {
-	text-align: left;
+#content {
+	margin-bottom: 200px;
 }
 
-#project-wrap {
+#projects-wrapper {
+	text-align: left;
 	padding: 0 30px;
 }
 
-#residencial {
-	height: 250px;
-}
-
-.project-type {
-	margin: 0;
-	padding: 15px 0;
-}
-
-.project-name {
-	margin: 0;
-}
-
-.project-location {
-	margin: 0 0 10px 0;
-	color: #caccce;
-}
-
-
-
-#residential-projects {
+.projects-row {
 	display: flex;
   	flex-wrap: nowrap;
   	overflow-x: auto;
+  	height: 250px;
+  	overflow-y: hidden;
 }
 
-.proyecto {
-	padding-top: 10px;
-	border-top: 1px solid #caccce;
-	margin-right: 15px;
-	height: 250px;
+.project-box {
+	flex: 0 0 auto;
 	width: 250px;
+	padding-top: 10px;
+	border-top: 1px solid gray;
+	margin-right: 20px;
+}
+
+.project-title {
+	margin: 0px;
+}
+
+.project-location {
+	margin-top: 0;
+}
+
+.img-wrap {
+	width: 100%;
+	height: 100%;
 }
 
 .project-img {
-}
-
-.project {
-	flex: 0 0 auto;
-	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
