@@ -21,6 +21,7 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	list-style: none;
+	padding: 0;
 }
 
 .lista-item {
@@ -44,6 +45,10 @@ header {
   	overflow-y: hidden;
 }
 
+.project-section-title {
+	font-size: 12px;
+}
+
 .project-box {
 	flex: 0 0 auto;
 	width: 250px;
@@ -54,10 +59,13 @@ header {
 
 .project-title {
 	margin: 0px;
+	font-size: 16px;
 }
 
 .project-location {
 	margin-top: 0;
+	font-size: 16px;
+	color: gray;
 }
 
 .img-wrap {
@@ -69,4 +77,19 @@ header {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+@media only screen and (max-width: 1020px) {
+  header {
+  	flex-direction: column;
+  	height: auto;
+  }
+
+  #lista {
+  	flex-direction: column;
+  }
+
+  .lista-item {
+  	padding: 10px 0;
+  }
 }
