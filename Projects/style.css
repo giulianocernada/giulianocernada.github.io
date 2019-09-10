@@ -43,6 +43,7 @@ header {
   	overflow-x: auto;
   	height: 250px;
   	overflow-y: hidden;
+  	margin-bottom: 80px;
 }
 
 .project-section-title {
