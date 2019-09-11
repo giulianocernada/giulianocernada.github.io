@@ -25,22 +25,3 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
-var header = $('slideshow');
-var range = 200;
-
-$(window).on('scroll', function () {
-  
-  var scrollTop = $(this).scrollTop(),
-      height = header.outerHeight(),
-      offset = height / 2,
-      calc = 1 - (scrollTop - offset + range) / range;
-
-  slideshow.css({ 'opacity': calc });
-
-  if (calc > '1') {
-    slideshow.css({ 'opacity': 1 });
-  } else if ( calc < '0' ) {
-    slideshow.css({ 'opacity': 0 });
-  }
-  
-});
