@@ -22,6 +22,10 @@ header {
 	z-index: 999;
 }
 
+.navbar-toggle {
+	display: none;
+}
+
 #lista {
 	display: flex;
 	flex-direction: row;
@@ -167,6 +171,7 @@ p {
 }
 
 #footer {
+	font-family: 'Roboto', sans-serif;
 	padding: 0 36px;
 	height: 100px;
 }
@@ -182,5 +187,41 @@ p {
 
 .footer-text {
 	font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #header {
+  	height: 100px;
+  }
+
+  #nav-tog {
+  	width: 100%;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+
+  #lista {
+  	display: none;
+  }
+
+  .navbar-toggle {
+  	display: initial;
+  	cursor: pointer;
+  	font-size: 24px;
+  }
+
+  #project-row {
+  	flex-direction: column;
+  	justify-content: center;
+  }
+
+  #project-tag {
+  	display: none;
+  }
+
+  #project-right-col {
+	margin: 0;
+}
 }
 
