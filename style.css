@@ -22,6 +22,7 @@ body {
 
 div {
 	padding: 50px;
+	transition: background-color 0.5s;
 }
 
 #div1, #div2 {
