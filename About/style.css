@@ -1,0 +1,183 @@
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+header {
+	height: 180px;
+/*	padding: 0 30px;*/
+	background: transparent;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 5px black;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+}
+
+.navbar-toggle {
+	display: none;
+}
+
+#header-title {
+	margin-left: 30px;
+}
+
+#lista {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-right: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+p {
+	margin: 0;
+}
+
+.lista-item {
+	padding: 10px;
+	transition: transform 0.5s;
+}
+
+.lista-item:hover {
+	text-decoration: underline;
+	transform: translateY(-5px);
+}
+
+#banner {
+	height: 85vh;
+	position: fixed;
+	top: 0;
+}
+
+#banner-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#project-wrap {
+	padding-top: 85vh;
+}
+
+#project-info {
+	background-color: #FFFFFF;
+	position: relative;
+	padding: 0 36px;
+	margin-bottom: 100px;
+}
+
+#project-block {
+	padding-top: 50px;
+}
+
+#project-row {
+	display: flex;
+	padding-bottom: 100px;
+}
+
+#info-tag {
+	font-size: 25px;
+}
+
+#project-title {
+	font-size: 25px;
+}
+
+#project-right-col {
+	margin-left: 33.33%;
+	text-align: left;
+}
+
+#project-description {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.detail-tag {
+	font-weight: bold;
+}
+
+.detail-row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+.detail-info {
+	font-family: 'Roboto', sans-serif;
+	width: 50%;
+	font-size: 16px;
+}
+
+#footer {
+	font-family: 'Roboto', sans-serif;
+	padding: 0 36px;
+	height: 100px;
+}
+
+#footer-content {
+	border-top: 1px solid gray;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-text {
+	font-size: 16px;
+	color: #000000;
+}
+
+@media only screen and (max-width: 1024px) {
+  #header {
+  	height: 100px;
+  }
+
+  #nav-tog {
+  	width: 100%;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+
+  #lista {
+  	display: none;
+  }
+
+  .navbar-toggle {
+  	display: initial;
+  	cursor: pointer;
+  	font-size: 24px;
+  }
+
+  #project-row {
+  	flex-direction: column;
+  	justify-content: center;
+  }
+
+  #project-tag {
+  	display: none;
+  }
+
+  #project-right-col {
+	margin: 0;
+}
+}
+
