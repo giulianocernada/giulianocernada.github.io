@@ -25,10 +25,3 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
-function classToggle() {
-  const navs = document.querySelectorAll('.lista-item')
-  
-  navs.forEach(nav => nav.classList.toggle('.Navbar__ToggleShow'));
-}
-
-document.getElementById('lista').addEventListener('click', classToggle);
