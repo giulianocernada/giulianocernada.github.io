@@ -49,6 +49,10 @@ body {
 	padding: 0 30px;
 }
 
+.openbtn {
+	cursor: pointer;
+}
+
 .list-item {
 	text-decoration: none;
 	color: #111;
