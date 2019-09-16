@@ -46,6 +46,82 @@ p {
 	margin: 0;
 }
 
+#sidebar {
+	height: 100%;
+	width: 0;
+	overflow-x: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #FFF;
+	color: #111;
+	transition: 0.5s;
+  	padding-top: 60px;
+  	text-align: left;
+  	z-index: 999;
+}
+
+#bio-sidebar {
+	height: 100%;
+	width: 0;
+	overflow-x: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+	color: #111;
+	transition: 1s;
+  	padding-top: 60px;
+  	text-align: left;
+  	z-index: 999;
+}
+
+.bio-text {
+	text-align: left;
+	padding: 0 30px;
+	margin-top: 50px;
+}
+
+#sidebar-title {
+	padding: 0 0 0 30px;
+	border-top: 1px solid gray;
+}
+
+.sidebar-link {
+	text-decoration: none;
+}
+
+#list {
+	list-style: none;
+	padding: 0 0 0 30px;
+}
+
+#list-social {
+	padding: 20px 0;
+}
+
+#btn {
+	text-align: right;
+	padding: 0 30px;
+}
+
+.openbtn {
+	cursor: pointer;
+}
+
+.closebtn {
+	cursor: pointer;
+}
+
+.list-item {
+	text-decoration: none;
+	color: #111;
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+
 .lista-item {
 	padding: 10px;
 	transition: transform 0.5s;
@@ -144,6 +220,17 @@ p {
 
 }
 
+#bio-title {
+	margin: 0;
+}
+
+#bio-epi {
+	margin: 0;
+	padding-bottom: 50px;
+	color: #111;
+	font-family: 'Roboto';
+}
+
 #left-col {
 	width: 40%;
 	text-align: left;
@@ -181,7 +268,16 @@ p {
 
 @media only screen and (max-width: 1024px) {
   #header {
-  	height: 100px;
+  	height: auto;
+  	display: flex;
+  	flex-direction: column;
+  	text-align: left;
+  }
+
+  #header-title {
+  	text-align: left;
+  	width: 100%;
+  	margin: 10px 0;
   }
 
   #nav-tog {
@@ -192,8 +288,10 @@ p {
   }
 
   #lista {
-  	display: none;
+  	flex-direction: row;
+  	flex-wrap: wrap;
   }
+
 
   .navbar-toggle {
   	display: initial;
@@ -213,5 +311,30 @@ p {
   #project-right-col {
 	margin: 0;
 }
+  
+  #gc-block {
+  	display: flex;
+  	flex-direction: column;
+  	padding: 0 0 150px 0;
+  }
+
+  #left-col {
+  	width: 100%;
+  }
+
+  #right-col {
+  	width: 100%;
+  }
+
+  #bio-epi {
+  	padding-bottom: 20px;
+  }
+
+  #gc-img {
+  	padding: 20px 0;
+  	width: 100%;
+  	object-fit: cover;
+  }
+
 }
 

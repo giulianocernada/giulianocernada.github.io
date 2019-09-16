@@ -19,7 +19,7 @@ header {
 	width: 100%;
 	position: absolute;
 	top: 0;
-	z-index: 999;
+	z-index: 998;
 }
 
 .navbar-toggle {
@@ -67,9 +67,9 @@ p {
 	background-color: #FFF;
 	color: #111;
 	transition: 0.5s;
-  	padding-top: 150px;
+  	padding-top: 60px;
   	text-align: left;
-  	z-index: 1;
+  	z-index: 999;
 }
 
 #sidebar-title {
@@ -266,6 +266,10 @@ p {
 	margin-bottom: 50px;
 }
 
+.details {
+	padding-bottom: 50px;
+}
+
 .detail-tag {
 	font-weight: bold;
 }
@@ -329,7 +333,16 @@ p {
 
 @media only screen and (max-width: 1024px) {
   #header {
-  	height: 100px;
+  	height: auto;
+  	display: flex;
+  	flex-direction: column;
+  	text-align: left;
+  }
+
+  #header-title {
+  	text-align: left;
+  	width: 100%;
+  	margin: 10px 0;
   }
 
   #nav-tog {
@@ -340,7 +353,8 @@ p {
   }
 
   #lista {
-  	display: none;
+  	flex-direction: row;
+  	flex-wrap: wrap;
   }
 
   .navbar-toggle {

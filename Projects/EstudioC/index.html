@@ -15,11 +15,26 @@
 			<a href="#"><li class="lista-item">Visualización</li></a>
 			<a href="#"><li class="lista-item">Documentación</li></a>
 			<a href="#"><li class="lista-item">Fotografía</li></a>
-			<a href="#"><li class="lista-item">Acerca de</li></a>
-			<a href="#"><li class="lista-item">Contacto</li></a>
+			<a href="../../About/About.html"><li class="lista-item">Acerca de</li></a>
+			<a class="landing-link openbtn" onclick="openNav(x)"><li class="lista-item">Contacto</li></a>
 		</ul>
 	</header>
-
+	<div id="sidebar">
+		<div id="btn">
+		<a href="javascript:void(0)" class="closebtn list-item" onclick="closeNav()">Cerrar</a>
+		</div>
+		<div id="sidebar-title"><h2>Contacto</h2></div>
+		<ul id="list">
+			<li class="list-item">Tel: +54 11 5690 2009</li>
+			<a class='sidebar-link' href="mailto:cigimax.info@gmail.com"><li class="list-item" style="padding-top: 20px">cigimax.info@gmail.com</li></a>
+			<div id="list-social">
+				<a target='_blank' class='sidebar-link' href="https://www.facebook.com/Cigimax-Render-414819245954070/"><li class="list-item">Facebook</li></a>
+				<a target='_blank' class='sidebar-link' href="https://www.instagram.com/cigimax/"><li class="list-item">Instagram</li></a>
+				<a target='_blank' class='sidebar-link' href="https://github.com/giulianocernada"><li class="list-item">GitHub</li></a>
+				<a target='_blank' class='sidebar-link' href="https://twitter.com/CernadaGiuliano"><li class="list-item">Twitter</li></a>
+			</div>
+		</ul>
+	</div>
 	<main id="main-content">
 		<div class="slideshow">
 			<div class="overlay"></div>
@@ -108,5 +123,6 @@
 		})
 	})
 </script>
+<script type="text/javascript" src="../../sidebar-script.js"></script>
 </body>
 </html>
